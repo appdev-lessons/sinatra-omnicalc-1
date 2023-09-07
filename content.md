@@ -10,7 +10,7 @@ LTI{Load Sinatra Omnicalc-1 assignment}(https://grades.firstdraft.com/launch)[S9
 
 ---
 
-[Here is a video for this lesson](https://share.descript.com/view/krwGaIMQ2mQ). You should not rely entirely on the video. PLEASE READ the below lesson (and [the _Query Strings and Forms_ lesson](https://learn.firstdraft.com/lessons/102)) as you are going through the steps, since there are additional details in the text.
+[Here is a video for this lesson](https://share.descript.com/view/krwGaIMQ2mQ). You should not rely entirely on the video. PLEASE READ the below lesson (and [the _Query Strings and Forms_ lesson](https://learn.firstdraft.com/lessons/102-query-strings-and-forms)) as you are going through the steps, since there are additional details in the text.
 
 ## Objectives
 
@@ -79,12 +79,12 @@ An example of a valid form; in particular, notice the `id=""` and `for=""` attri
 
 ### Additional Hints
 
-The `to_fs` (as in "format string") method can format `Floats` [in more specific ways](https://learn.firstdraft.com/lessons/33#to_fs) that help us easily display data in a variety of ways. (**Note:** We already included the `require "active_support/all"` in the `config/environment.rb` file, so you can use these methods.)
+The `to_fs` (as in "format string") method can format `Floats` [in more specific ways](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#to_fs) that help us easily display data in a variety of ways. (**Note:** We already included the `require "active_support/all"` in the `config/environment.rb` file, so you can use these methods.)
 
 In particular these two:
 
-- [`.to_fs(:currency)`](https://learn.firstdraft.com/lessons/33#currency)
-- [`.to_fs(:percentage)`](https://learn.firstdraft.com/lessons/33#percentage)
+- [`.to_fs(:currency)`](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#currency)
+- [`.to_fs(:percentage)`](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#percentage)
 
 could be useful when formatting the output of the payment form.
 
