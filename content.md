@@ -10,7 +10,10 @@ LTI{Load Sinatra Omnicalc-1 assignment}(https://grades.firstdraft.com/launch)[S9
 
 ---
 
-[Here is a video for this lesson](https://share.descript.com/view/krwGaIMQ2mQ). You should not rely entirely on the video. PLEASE READ the below lesson (and [the _Query Strings and Forms_ lesson](https://learn.firstdraft.com/lessons/102-query-strings-and-forms)) as you are going through the steps, since there are additional details in the text.
+<div class="bg-blue-100 py-1 px-5" markdown="1">
+
+[Here is a video for this lesson](https://share.descript.com/view/krwGaIMQ2mQ). You should not rely entirely on the video. Read the below lesson (and [the _Query Strings and Forms_ lesson](https://learn.firstdraft.com/lessons/102-query-strings-and-forms)) as you are going through the steps, since there are additional details in the text.
+</div>
 
 ## Objectives
 
@@ -38,7 +41,7 @@ Here is how the app should work. As a user:
  - If I visit the path **/random/new**, I should see a form with labels and inputs to enter two numbers, a minimum and a maximum.
     - If I submit that form, I should see a random number that falls between the numbers that I entered.
 
-You can compare your app against the [target](http://omnicalc-1.matchthetarget.com/){:target="_blank"}, including doing "View Source" to look at some of the static HTML.
+You can compare your app against [the target app](http://omnicalc-1.matchthetarget.com/), including doing "View Source" to look at some of the static HTML.
 
 
 ### Valid, Accessible Forms
@@ -77,7 +80,7 @@ An example of a valid form; in particular, notice the `id=""` and `for=""` attri
 </form>
 ```
 
-### Additional Hints
+### Hint on Formatting
 
 The `to_fs` (as in "format string") method can format `Floats` [in more specific ways](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#to_fs) that help us easily display data in a variety of ways. (**Note:** We already included the `require "active_support/all"` in the `config/environment.rb` file, so you can use these methods.)
 
@@ -92,3 +95,5 @@ could be useful when formatting the output of the payment form.
 
 - Approximately how long (in minutes) did this lesson take you to complete?
 {: .free_text_number #time_taken title="Time taken" points="1" answer="any" }
+
+---
