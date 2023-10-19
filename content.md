@@ -43,6 +43,16 @@ Here is how the app should work. As a user:
 
 You can compare your app against [the target app](http://omnicalc-1.matchthetarget.com/), including doing "View Source" to look at some of the static HTML.
 
+### Hint on Formatting
+
+The `to_fs` (as in "format string") method can format `Floats` [in more specific ways](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#to_fs) that help us easily display data in a variety of ways. (**Note:** We already included the `require "active_support/all"` in the `config/environment.rb` file, so you can use these methods.)
+
+In particular these two:
+
+- [`.to_fs(:currency)`](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#currency)
+- [`.to_fs(:percentage)`](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#percentage)
+
+could be useful when formatting the output of the payment form.
 
 ### Valid, Accessible Forms
 
@@ -79,17 +89,6 @@ An example of a valid form; in particular, notice the `id=""` and `for=""` attri
   </button>
 </form>
 ```
-
-### Hint on Formatting
-
-The `to_fs` (as in "format string") method can format `Floats` [in more specific ways](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#to_fs) that help us easily display data in a variety of ways. (**Note:** We already included the `require "active_support/all"` in the `config/environment.rb` file, so you can use these methods.)
-
-In particular these two:
-
-- [`.to_fs(:currency)`](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#currency)
-- [`.to_fs(:percentage)`](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#percentage)
-
-could be useful when formatting the output of the payment form.
 
 ---
 
