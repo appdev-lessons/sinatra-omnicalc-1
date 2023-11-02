@@ -24,6 +24,8 @@ Here is how the app should work. As a user:
   - If I submit that form, I should see the square of the number that I entered.
 - If I visit the path **/square_root/new**, I should see a form with a label and an input to enter a number.
   - If I submit that form, I should see the square root of the number that I entered.
+- If I visit the path **/random/new**, I should see a form with labels and inputs to enter two numbers, a minimum and a maximum.
+  - If I submit that form, I should see a random number that falls between the numbers that I entered.
 - If I visit the path **/payment/new**, I should see a form with labels and inputs to enter three values:
 
   - The APR (annual percentage rate).
@@ -44,21 +46,21 @@ When calculating monthly payments, it's important to keep these hints in mind:
 
 **1. Handling APR (Annual Percentage Rate):**
 
-- The 'r' in the formula represents the interest rate per period. We take the APR(Annual Percentage Rate) as a string input, so follow these steps:
-  a. Convert the user input from a string to a float.
-  b. Divide the resulting number by 100 to convert from a percentage to a rate.
-  c. Since we are calculating monthly payments, divide by 12 as well.
+- The "r" in the formula represents the interest rate per period. We take the APR(Annual Percentage Rate) as a string input, so follow these steps:
+  - Convert the user input from a string to a float.
+  - Divide the resulting number by 100 to convert from a percentage to a rate.
+  - Since we are calculating monthly payments, divide by 12 as well.
 
-**2. Managing the Loan Term ('n' in the Formula):**
+**2. Managing the Loan Term ("n" in the Formula):**
 
-- The 'n' in the formula stands for the number of periods, which is typically provided by users in years. To adapt it for monthly payments, do the following:
-  a. Convert the user input from a string to an integer.
-  b. Multiply 'n' by 12 to calculate the number of monthly periods.
+- The "n" in the formula stands for the number of periods, which is typically provided by users in years. To adapt it for monthly payments, do the following:
+  - Convert the user input from a string to an integer.
+  - Multiply "n" by 12 to calculate the number of monthly periods.
 
 **3. Variable Organization:**
 
 - To facilitate debugging and monitoring, create two variables: one for the numerator and another for the denominator.
-- If these are instance variables, you can access and view them within your program or view page.
+- If these are instance variables (i.e. `@numerator` with the leading `@`), then you can access and view them within your `.erb` view templates.
 - Organizing your variables in this way will help you identify and resolve any discrepancies between your output and the target result more efficiently.
 
 By following these steps and organizing your variables as suggested, you'll make the process of calculating monthly payments more manageable and accurate.
@@ -76,8 +78,9 @@ In particular these two:
 
 could be useful when formatting the output of the payment form.
 
-- If I visit the path **/random/new**, I should see a form with labels and inputs to enter two numbers, a minimum and a maximum.
-  - If I submit that form, I should see a random number that falls between the numbers that I entered.
+<div class="bg-blue-100 py-1 px-5" markdown="1">
+Use the `precision` option on the `to_fs` method to round your results. If you are confused by the usage, then please click the links above to read more about these methods.
+</div>
 
 You can compare your app against [the target app](http://omnicalc-1.matchthetarget.com/), including doing "View Source" to look at some of the static HTML.
 
