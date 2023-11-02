@@ -44,9 +44,9 @@ When calculating monthly payments, it's important to keep these hints in mind:
 
 **1. Handling APR (Annual Percentage Rate):**
 
-- The 'r' in the formula represents the interest rate per period. We take the APR as a string input, so follow these steps:
+- The 'r' in the formula represents the interest rate per period. We take the APR(Annual Percentage Rate) as a string input, so follow these steps:
   a. Convert the user input from a string to a float.
-  b. Divide the resulting number by 100 to convert it to a percentage.
+  b. Divide the resulting number by 100 to convert from a percentage to a rate.
   c. Since we are calculating monthly payments, divide by 12 as well.
 
 **2. Managing the Loan Term ('n' in the Formula):**
@@ -72,7 +72,7 @@ The `to_fs` (as in "format string") method can format `Floats` [in more specific
 In particular these two:
 
 - [`.to_fs(:currency)`](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#currency)
-- [`.to_fs(:percentage)`](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#percentage)
+- [`.to_fs(:percentage, {:precision => 4})`](https://learn.firstdraft.com/lessons/33-the-one-ruby-reference#percentage)
 
 could be useful when formatting the output of the payment form.
 
