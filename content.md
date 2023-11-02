@@ -123,6 +123,6 @@ An example of a valid form; in particular, notice the `id=""` and `for=""` attri
 ---
 
 - Approximately how long (in minutes) did this lesson take you to complete?
-  {: .free_text_number #time_taken title="Time taken" points="1" answer="any" }
+{: .free_text_number #time_taken title="Time taken" points="1" answer="any" }
 
 ---
