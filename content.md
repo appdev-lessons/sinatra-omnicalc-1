@@ -96,7 +96,7 @@ You can compare your app against [the target app](http://omnicalc-1.matchthetarg
 
 An example of a valid form; in particular, notice the `id=""` and `for=""` attributes:
 
-```erb
+```erb{3:(12-26),7:(12-25),11:(12-26),15:(12-25)}
 <form action="/random/results">
   <div>
     <label for="min_input">
